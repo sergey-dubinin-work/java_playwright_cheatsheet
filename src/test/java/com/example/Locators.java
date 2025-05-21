@@ -10,9 +10,9 @@ import java.util.regex.Pattern;
 
 public class Locators {
 
-    private static Page page;
+    private Page page;
 
-    public static void locators() {
+    public void locators() {
 
         // .getByRole()
 
@@ -66,7 +66,7 @@ public class Locators {
 
     }
 
-    public static void locatorFilters(){
+    public void locatorFilters(){
         // По тексту
 
         page.getByRole(AriaRole.LISTITEM)                                        // Находим все элементы <li>
